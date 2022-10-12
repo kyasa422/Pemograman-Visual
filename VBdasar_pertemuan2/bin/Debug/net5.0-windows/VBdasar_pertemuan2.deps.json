@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "VBdasar_pertemuan2/1.0.0": {
+        "runtime": {
+          "VBdasar_pertemuan2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VBdasar_pertemuan2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
