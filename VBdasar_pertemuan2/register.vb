@@ -2,7 +2,7 @@
     Public Shared Kamar As Integer = 100
 
     Dim nik As String
-    Dim nama As String
+    Dim Nama As String
     Dim janis_kelamin As String
     Dim max_char_alamat = 50
     Dim tempMaxCharAlamat = max_char_alamat
@@ -10,6 +10,17 @@
     Dim keluhan_arrlist As New List(Of String)
     Dim keluhan_arrlist_id As New List(Of String)
     Dim layanan As New List(Of String) From {"Inap", "Poliklinik", "Spesialis"}
+
+    Public Shared foto_pasien
+    Public Shared nama_pasien
+    Public Shared nik_pasien
+    Public Shared jenis_kelamin_ As String
+    Public Shared tanggal_lahir
+    Public Shared alamat
+    Public Shared layanan_value
+    Public Shared catatatn_dokter
+    Public Shared keluhan_list As New List(Of String)
+
 
 
 
@@ -25,7 +36,29 @@
 
 
     Private Sub Btnpesan_Click(sender As Object, e As EventArgs) Handles Btnpesan.Click
-        Dim nama = MessageBox.Show(txtNama.Text)
+        nama_pasien = txtNama.Text
+        nik_pasien = txtNik.Text
+        tanggal_lahir = Datetanggallahir.Value.ToShortDateString
+        alamat = RichTextBox1.Text
+        layanan_value = ComboBoxlayanan.SelectedItem()
+        catatatn_dokter = RichTextBox2.Text
+
+        If cbpusing.Checked() Then
+
+            keluhan_list.Add("Pusing")
+        End If
+        If cbdemam.Checked() Then
+            keluhan_list.Add("Demam")
+        End If
+
+        If cbmual.Checked() Then
+            keluhan_list.Add("Mual")
+        End If
+
+        Kamar -= 1
+
+        Dim pasien = New pasien()
+        pasien.Show()
 
     End Sub
 
@@ -85,21 +118,7 @@
 
     End Sub
 
-    Private Sub RichTextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles RichTextBox1.KeyPress
-        If RichTextBox1.Text.Length >= max_char_alamat Then
-            If e.KeyChar <> ControlChars.Back Then
-                e.Handled = True
-                MessageBox.Show("max Length")
-            End If
-        ElseIf Not e.KeyChar = Chr(Keys.Delete) And Not e.KeyChar = Chr(Keys.Back) Then
-            tempMaxCharAlamat -= 1
-            lblalamat.Text = tempMaxCharAlamat.ToString()
-        ElseIf tempMaxCharAlamat < max_char_alamat Then
-            tempMaxCharAlamat += 1
-            lblalamat.Text = tempMaxCharAlamat.ToString()
 
-        End If
-    End Sub
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         janis_kelamin = "Laki-Laki"
@@ -109,10 +128,7 @@
         janis_kelamin = "Perempuan"
     End Sub
 
-    Private Sub btnJenis_Click(sender As Object, e As EventArgs) Handles btnJenis.Click
 
-        btnJenis.Text = " Select " + janis_kelamin
-    End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -171,78 +187,38 @@
 
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles listboxkeluhan.SelectedIndexChanged
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btntf_Click(sender As Object, e As EventArgs) Handles btntf.Click
-        listboxkeluhan.Items.Clear()
-        If cbpusing.Checked() Then
-            keluhan_arrlist.Add("Pusing")
-        End If
-        If cbdemam.Checked() Then
-            keluhan_arrlist.Add("Demam")
-        End If
 
-        If cbmual.Checked() Then
-            keluhan_arrlist.Add("Mual")
-        End If
-
-        For Each kel In keluhan_arrlist
-            listboxkeluhan.Items.Add(kel)
-        Next
-        keluhan_arrlist.Clear()
-    End Sub
-
-    Private Sub Btnadd_Click(sender As Object, e As EventArgs) Handles Btnadd.Click
-        Dim add_item = txtadaitem.Text
-        lboxkeluhanadd.Items.Add(add_item)
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MessageBox.Show(lboxkeluhanadd.SelectedItem())
-    End Sub
-
-    Private Sub btncheckedlist_Click(sender As Object, e As EventArgs) Handles btncheckedlist.Click
-        For i = 0 To CheckedListBoxkeluhan.Items.Count - 1
-            Dim Item As Object = CheckedListBoxkeluhan.Items(i)
-
-            If CheckedListBoxkeluhan.GetItemChecked(i) Then
-                keluhan_arrlist.Add(CheckedListBoxkeluhan.Items(i))
-            End If
-        Next
-
-        Dim keluhan_str = String.Join(",", keluhan_arrlist.ToArray)
-        MessageBox.Show(keluhan_str)
-
-        keluhan_arrlist.Clear()
-
-    End Sub
-
-    Private Sub btntflist_Click(sender As Object, e As EventArgs) Handles btntflist.Click
-        For i As Integer = 0 To CheckedListBoxkeluhan.Items.Count - 1
-            CheckedListBoxkeluhan.SetItemChecked(i, False)
-        Next
-
-        If cbpusing.Checked() Then
-            keluhan_arrlist_id.Add(0)
-        End If
-
-        If cbmual.Checked() Then
-            keluhan_arrlist_id.Add(1)
-        End If
-        If cbdemam.Checked() Then
-            keluhan_arrlist_id.Add(2)
-        End If
-
-        For Each kel In keluhan_arrlist_id
-            CheckedListBoxkeluhan.SetItemChecked(kel, True)
-        Next
-        keluhan_arrlist_id.Clear()
-    End Sub
 
     Private Sub btnshowcbsel_Click(sender As Object, e As EventArgs) Handles btnshowcbsel.Click
         Dim layanan_item = ComboBoxlayanan.SelectedItem()
         MessageBox.Show(layanan_item)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btndate.Click
+        MessageBox.Show(Datetanggallahir.Value.ToString("dd/MMMM/yyyy"))
+    End Sub
+
+    Private Sub timelahir_ValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btntimelahir_Click(sender As Object, e As EventArgs)
+        Dim current_time = DateTime.Now.ToString("yyyy/MM/dd:hh:mm:ss")
+        MessageBox.Show(current_time)
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        OpenFileDialog1.Title = "Open foto"
+        OpenFileDialog1.Filter = "Image|*.bmp|imageJPG|* Image JPEG|*.jpeg|Image PNG|*.png|image GIF|All Format|*.*"
+        OpenFileDialog1.ShowDialog()
+
+        PictureBox1.Load(OpenFileDialog1.FileName)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+
+
     End Sub
 End Class

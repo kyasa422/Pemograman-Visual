@@ -38,3 +38,5 @@ C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan
 C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.pdb
 C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.genruntimeconfig.cache
 C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.lbkeluhan.resources
+C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.exercise.resources
+C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.pasien.resources

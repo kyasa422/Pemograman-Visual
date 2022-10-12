@@ -38,8 +38,6 @@ Partial Class lbkeluhan
         Me.Lblhasil = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnJenis = New System.Windows.Forms.Button()
-        Me.lblalamat = New System.Windows.Forms.Label()
         Me.cbpusing = New System.Windows.Forms.CheckBox()
         Me.cbmual = New System.Windows.Forms.CheckBox()
         Me.cbdemam = New System.Windows.Forms.CheckBox()
@@ -47,36 +45,38 @@ Partial Class lbkeluhan
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnoutputlist = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.btntf = New System.Windows.Forms.Button()
-        Me.listboxkeluhan = New System.Windows.Forms.ListBox()
-        Me.txtadaitem = New System.Windows.Forms.TextBox()
-        Me.Btnadd = New System.Windows.Forms.Button()
-        Me.btntflist = New System.Windows.Forms.Button()
-        Me.lboxkeluhanadd = New System.Windows.Forms.ListBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckedListBoxkeluhan = New System.Windows.Forms.CheckedListBox()
-        Me.btncheckedlist = New System.Windows.Forms.Button()
         Me.ComboBoxlayanan = New System.Windows.Forms.ComboBox()
         Me.btnshowcbsel = New System.Windows.Forms.Button()
+        Me.Datetanggallahir = New System.Windows.Forms.DateTimePicker()
+        Me.btndate = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btnpesan
         '
-        Me.Btnpesan.Location = New System.Drawing.Point(115, 394)
+        Me.Btnpesan.Location = New System.Drawing.Point(554, 53)
         Me.Btnpesan.Name = "Btnpesan"
-        Me.Btnpesan.Size = New System.Drawing.Size(86, 23)
+        Me.Btnpesan.Size = New System.Drawing.Size(137, 23)
         Me.Btnpesan.TabIndex = 0
-        Me.Btnpesan.Text = "Tampil Pesan"
+        Me.Btnpesan.Text = "Tambah Pasien"
         Me.Btnpesan.UseVisualStyleBackColor = True
         '
         'txtNama
         '
         Me.txtNama.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.txtNama.Location = New System.Drawing.Point(116, 145)
+        Me.txtNama.Location = New System.Drawing.Point(225, 152)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(305, 23)
         Me.txtNama.TabIndex = 1
@@ -84,7 +84,7 @@ Partial Class lbkeluhan
         'txtNik
         '
         Me.txtNik.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.txtNik.Location = New System.Drawing.Point(116, 183)
+        Me.txtNik.Location = New System.Drawing.Point(225, 121)
         Me.txtNik.Name = "txtNik"
         Me.txtNik.Size = New System.Drawing.Size(305, 23)
         Me.txtNik.TabIndex = 2
@@ -93,7 +93,7 @@ Partial Class lbkeluhan
         '
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(20, 148)
+        Me.Label1.Location = New System.Drawing.Point(113, 155)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(40, 17)
         Me.Label1.TabIndex = 3
@@ -103,7 +103,7 @@ Partial Class lbkeluhan
         '
         Me.LblNik.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.LblNik.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.LblNik.Location = New System.Drawing.Point(20, 186)
+        Me.LblNik.Location = New System.Drawing.Point(113, 124)
         Me.LblNik.Name = "LblNik"
         Me.LblNik.Size = New System.Drawing.Size(40, 17)
         Me.LblNik.TabIndex = 4
@@ -150,10 +150,11 @@ Partial Class lbkeluhan
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.RadioButton1.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.RadioButton1.Location = New System.Drawing.Point(116, 315)
+        Me.RadioButton1.Location = New System.Drawing.Point(6, 22)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(72, 19)
+        Me.RadioButton1.Size = New System.Drawing.Size(61, 16)
         Me.RadioButton1.TabIndex = 9
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Laki-Laki"
@@ -163,10 +164,11 @@ Partial Class lbkeluhan
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.RadioButton2.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RadioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.RadioButton2.Location = New System.Drawing.Point(115, 340)
+        Me.RadioButton2.Location = New System.Drawing.Point(86, 22)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(86, 19)
+        Me.RadioButton2.Size = New System.Drawing.Size(74, 16)
         Me.RadioButton2.TabIndex = 10
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Perempuan"
@@ -176,7 +178,7 @@ Partial Class lbkeluhan
         '
         Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(19, 317)
+        Me.Label2.Location = New System.Drawing.Point(113, 185)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(89, 17)
         Me.Label2.TabIndex = 11
@@ -186,7 +188,7 @@ Partial Class lbkeluhan
         '
         Me.Label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(442, 54)
+        Me.Label5.Location = New System.Drawing.Point(395, 23)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 17)
         Me.Label5.TabIndex = 12
@@ -194,7 +196,7 @@ Partial Class lbkeluhan
         '
         'Btnkamar
         '
-        Me.Btnkamar.Location = New System.Drawing.Point(442, 85)
+        Me.Btnkamar.Location = New System.Drawing.Point(395, 54)
         Me.Btnkamar.Name = "Btnkamar"
         Me.Btnkamar.Size = New System.Drawing.Size(133, 23)
         Me.Btnkamar.TabIndex = 13
@@ -205,7 +207,7 @@ Partial Class lbkeluhan
         '
         Me.Lblhasil.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Lblhasil.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Lblhasil.Location = New System.Drawing.Point(524, 54)
+        Me.Lblhasil.Location = New System.Drawing.Point(477, 23)
         Me.Lblhasil.Name = "Lblhasil"
         Me.Lblhasil.Size = New System.Drawing.Size(27, 17)
         Me.Lblhasil.TabIndex = 14
@@ -213,9 +215,9 @@ Partial Class lbkeluhan
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(115, 220)
+        Me.RichTextBox1.Location = New System.Drawing.Point(223, 271)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(277, 49)
+        Me.RichTextBox1.Size = New System.Drawing.Size(307, 64)
         Me.RichTextBox1.TabIndex = 15
         Me.RichTextBox1.Text = ""
         '
@@ -224,28 +226,11 @@ Partial Class lbkeluhan
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label6.Location = New System.Drawing.Point(20, 222)
+        Me.Label6.Location = New System.Drawing.Point(115, 273)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 15)
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Alamat"
-        '
-        'btnJenis
-        '
-        Me.btnJenis.Location = New System.Drawing.Point(116, 365)
-        Me.btnJenis.Name = "btnJenis"
-        Me.btnJenis.Size = New System.Drawing.Size(85, 23)
-        Me.btnJenis.TabIndex = 17
-        Me.btnJenis.UseVisualStyleBackColor = True
-        '
-        'lblalamat
-        '
-        Me.lblalamat.AutoSize = True
-        Me.lblalamat.Location = New System.Drawing.Point(402, 254)
-        Me.lblalamat.Name = "lblalamat"
-        Me.lblalamat.Size = New System.Drawing.Size(19, 15)
-        Me.lblalamat.TabIndex = 18
-        Me.lblalamat.Text = "50"
         '
         'cbpusing
         '
@@ -295,9 +280,9 @@ Partial Class lbkeluhan
         Me.Panel2.Controls.Add(Me.cbdemam)
         Me.Panel2.Controls.Add(Me.cbmual)
         Me.Panel2.Controls.Add(Me.cbpusing)
-        Me.Panel2.Location = New System.Drawing.Point(442, 142)
+        Me.Panel2.Location = New System.Drawing.Point(223, 377)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(133, 127)
+        Me.Panel2.Size = New System.Drawing.Size(307, 127)
         Me.Panel2.TabIndex = 23
         '
         'btnoutputlist
@@ -321,153 +306,158 @@ Partial Class lbkeluhan
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "Keluhan"
         '
-        'btntf
-        '
-        Me.btntf.Location = New System.Drawing.Point(595, 275)
-        Me.btntf.Name = "btntf"
-        Me.btntf.Size = New System.Drawing.Size(120, 23)
-        Me.btntf.TabIndex = 24
-        Me.btntf.Text = "Transfer"
-        Me.btntf.UseVisualStyleBackColor = True
-        '
-        'listboxkeluhan
-        '
-        Me.listboxkeluhan.FormattingEnabled = True
-        Me.listboxkeluhan.ItemHeight = 15
-        Me.listboxkeluhan.Items.AddRange(New Object() {"List Keluhan"})
-        Me.listboxkeluhan.Location = New System.Drawing.Point(595, 144)
-        Me.listboxkeluhan.Name = "listboxkeluhan"
-        Me.listboxkeluhan.Size = New System.Drawing.Size(120, 124)
-        Me.listboxkeluhan.TabIndex = 25
-        '
-        'txtadaitem
-        '
-        Me.txtadaitem.Location = New System.Drawing.Point(3, 30)
-        Me.txtadaitem.Name = "txtadaitem"
-        Me.txtadaitem.Size = New System.Drawing.Size(119, 23)
-        Me.txtadaitem.TabIndex = 26
-        '
-        'Btnadd
-        '
-        Me.Btnadd.Location = New System.Drawing.Point(3, 57)
-        Me.Btnadd.Name = "Btnadd"
-        Me.Btnadd.Size = New System.Drawing.Size(119, 23)
-        Me.Btnadd.TabIndex = 27
-        Me.Btnadd.Text = "add item"
-        Me.Btnadd.UseVisualStyleBackColor = True
-        '
-        'btntflist
-        '
-        Me.btntflist.Location = New System.Drawing.Point(442, 275)
-        Me.btntflist.Name = "btntflist"
-        Me.btntflist.Size = New System.Drawing.Size(133, 23)
-        Me.btntflist.TabIndex = 28
-        Me.btntflist.Text = "Transfer list Check"
-        Me.btntflist.UseVisualStyleBackColor = True
-        '
-        'lboxkeluhanadd
-        '
-        Me.lboxkeluhanadd.FormattingEnabled = True
-        Me.lboxkeluhanadd.ItemHeight = 15
-        Me.lboxkeluhanadd.Items.AddRange(New Object() {"List Keluhan"})
-        Me.lboxkeluhanadd.Location = New System.Drawing.Point(338, 318)
-        Me.lboxkeluhanadd.Name = "lboxkeluhanadd"
-        Me.lboxkeluhanadd.Size = New System.Drawing.Size(96, 109)
-        Me.lboxkeluhanadd.TabIndex = 29
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(0, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(124, 25)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Keluhan lainya"
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Controls.Add(Me.Label8)
-        Me.Panel3.Controls.Add(Me.Btnadd)
-        Me.Panel3.Controls.Add(Me.txtadaitem)
-        Me.Panel3.Location = New System.Drawing.Point(207, 315)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(125, 112)
-        Me.Panel3.TabIndex = 30
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(3, 84)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(119, 23)
-        Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Show Item"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'CheckedListBoxkeluhan
-        '
-        Me.CheckedListBoxkeluhan.FormattingEnabled = True
-        Me.CheckedListBoxkeluhan.Items.AddRange(New Object() {"Pusing", "Mual", "Demam"})
-        Me.CheckedListBoxkeluhan.Location = New System.Drawing.Point(445, 303)
-        Me.CheckedListBoxkeluhan.Name = "CheckedListBoxkeluhan"
-        Me.CheckedListBoxkeluhan.Size = New System.Drawing.Size(128, 94)
-        Me.CheckedListBoxkeluhan.TabIndex = 32
-        '
-        'btncheckedlist
-        '
-        Me.btncheckedlist.Location = New System.Drawing.Point(445, 403)
-        Me.btncheckedlist.Name = "btncheckedlist"
-        Me.btncheckedlist.Size = New System.Drawing.Size(128, 23)
-        Me.btncheckedlist.TabIndex = 29
-        Me.btncheckedlist.Text = "Show Checked Item"
-        Me.btncheckedlist.UseVisualStyleBackColor = True
-        '
         'ComboBoxlayanan
         '
         Me.ComboBoxlayanan.FormattingEnabled = True
-        Me.ComboBoxlayanan.Location = New System.Drawing.Point(595, 303)
+        Me.ComboBoxlayanan.Location = New System.Drawing.Point(224, 342)
         Me.ComboBoxlayanan.Name = "ComboBoxlayanan"
-        Me.ComboBoxlayanan.Size = New System.Drawing.Size(121, 23)
+        Me.ComboBoxlayanan.Size = New System.Drawing.Size(240, 23)
         Me.ComboBoxlayanan.TabIndex = 33
         '
         'btnshowcbsel
         '
-        Me.btnshowcbsel.Location = New System.Drawing.Point(595, 332)
+        Me.btnshowcbsel.Location = New System.Drawing.Point(470, 342)
         Me.btnshowcbsel.Name = "btnshowcbsel"
-        Me.btnshowcbsel.Size = New System.Drawing.Size(121, 23)
+        Me.btnshowcbsel.Size = New System.Drawing.Size(60, 23)
         Me.btnshowcbsel.TabIndex = 34
-        Me.btnshowcbsel.Text = "show selected item"
+        Me.btnshowcbsel.Text = "show"
         Me.btnshowcbsel.UseVisualStyleBackColor = True
+        '
+        'Datetanggallahir
+        '
+        Me.Datetanggallahir.Location = New System.Drawing.Point(223, 242)
+        Me.Datetanggallahir.Name = "Datetanggallahir"
+        Me.Datetanggallahir.Size = New System.Drawing.Size(241, 23)
+        Me.Datetanggallahir.TabIndex = 35
+        '
+        'btndate
+        '
+        Me.btndate.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btndate.Location = New System.Drawing.Point(470, 242)
+        Me.btndate.Name = "btndate"
+        Me.btndate.Size = New System.Drawing.Size(60, 19)
+        Me.btndate.TabIndex = 26
+        Me.btndate.Text = "Show Date"
+        Me.btndate.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.GroupBox1.Location = New System.Drawing.Point(225, 181)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(305, 50)
+        Me.GroupBox1.TabIndex = 38
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Jenis Kelamin"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.VBdasar_pertemuan2.My.Resources.Resources.iroro
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 109)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(87, 93)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 39
+        Me.PictureBox1.TabStop = False
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(7, 199)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(87, 23)
+        Me.Button2.TabIndex = 40
+        Me.Button2.Text = "Tambah foto"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label9.Location = New System.Drawing.Point(113, 240)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(89, 17)
+        Me.Label9.TabIndex = 41
+        Me.Label9.Text = "Tanggal Lahir"
+        '
+        'Label10
+        '
+        Me.Label10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label10.Location = New System.Drawing.Point(115, 347)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(89, 17)
+        Me.Label10.TabIndex = 42
+        Me.Label10.Text = "Layanan"
+        '
+        'Label11
+        '
+        Me.Label11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label11.Location = New System.Drawing.Point(113, 380)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(89, 17)
+        Me.Label11.TabIndex = 43
+        Me.Label11.Text = "Keluhan"
+        '
+        'RichTextBox2
+        '
+        Me.RichTextBox2.Location = New System.Drawing.Point(557, 144)
+        Me.RichTextBox2.Name = "RichTextBox2"
+        Me.RichTextBox2.Size = New System.Drawing.Size(266, 96)
+        Me.RichTextBox2.TabIndex = 44
+        Me.RichTextBox2.Text = ""
+        '
+        'Label12
+        '
+        Me.Label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label12.Location = New System.Drawing.Point(555, 127)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(89, 17)
+        Me.Label12.TabIndex = 45
+        Me.Label12.Text = "Catatan Dokter"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(748, 248)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 46
+        Me.Button3.Text = "Buka File"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'lbkeluhan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.VBdasar_pertemuan2.My.Resources.Resources.wp6490338_jett_valorant_wallpapers
-        Me.ClientSize = New System.Drawing.Size(826, 439)
+        Me.ClientSize = New System.Drawing.Size(1207, 591)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.RichTextBox2)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btndate)
+        Me.Controls.Add(Me.Datetanggallahir)
         Me.Controls.Add(Me.btnshowcbsel)
         Me.Controls.Add(Me.ComboBoxlayanan)
-        Me.Controls.Add(Me.btncheckedlist)
-        Me.Controls.Add(Me.CheckedListBoxkeluhan)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.lboxkeluhanadd)
-        Me.Controls.Add(Me.btntflist)
-        Me.Controls.Add(Me.listboxkeluhan)
-        Me.Controls.Add(Me.btntf)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.lblalamat)
-        Me.Controls.Add(Me.btnJenis)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Lblhasil)
         Me.Controls.Add(Me.Btnkamar)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel1)
@@ -481,8 +471,9 @@ Partial Class lbkeluhan
         Me.Text = "Registrasi Form"
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -504,8 +495,6 @@ Partial Class lbkeluhan
     Friend WithEvents Lblhasil As Label
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents btnJenis As Button
-    Friend WithEvents lblalamat As Label
     Friend WithEvents cbpusing As CheckBox
     Friend WithEvents cbmual As CheckBox
     Friend WithEvents cbdemam As CheckBox
@@ -513,17 +502,18 @@ Partial Class lbkeluhan
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents btnoutputlist As Button
-    Friend WithEvents btntf As Button
-    Friend WithEvents listboxkeluhan As ListBox
-    Friend WithEvents txtadaitem As TextBox
-    Friend WithEvents Btnadd As Button
-    Friend WithEvents btntflist As Button
-    Friend WithEvents lboxkeluhanadd As ListBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents CheckedListBoxkeluhan As CheckedListBox
-    Friend WithEvents btncheckedlist As Button
     Friend WithEvents ComboBoxlayanan As ComboBox
     Friend WithEvents btnshowcbsel As Button
+    Friend WithEvents Datetanggallahir As DateTimePicker
+    Friend WithEvents btndate As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Button3 As Button
 End Class
