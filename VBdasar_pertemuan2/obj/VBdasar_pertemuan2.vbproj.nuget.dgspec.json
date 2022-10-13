@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kyasa\\source\\repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj": {}
+    "C:\\Users\\Kyasa\\Source\\Repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Kyasa\\source\\repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj": {
+    "C:\\Users\\Kyasa\\Source\\Repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kyasa\\source\\repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj",
+        "projectUniqueName": "C:\\Users\\Kyasa\\Source\\Repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj",
         "projectName": "VBdasar_pertemuan2",
-        "projectPath": "C:\\Users\\Kyasa\\source\\repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj",
+        "projectPath": "C:\\Users\\Kyasa\\Source\\Repos\\Pemograman-Visual\\VBdasar_pertemuan2\\VBdasar_pertemuan2.vbproj",
         "packagesPath": "C:\\Users\\Kyasa\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kyasa\\Source\\Repos\\Pemograman-Visual\\VBdasar_pertemuan2\\obj\\",
         "projectStyle": "PackageReference",

@@ -10,7 +10,7 @@
     Dim keluhan_arrlist As New List(Of String)
     Dim keluhan_arrlist_id As New List(Of String)
     Dim layanan As New List(Of String) From {"Inap", "Poliklinik", "Spesialis"}
-
+    Dim foto
     Public Shared foto_pasien
     Public Shared nama_pasien
     Public Shared nik_pasien
@@ -41,7 +41,7 @@
         tanggal_lahir = Datetanggallahir.Value.ToShortDateString
         alamat = RichTextBox1.Text
         layanan_value = ComboBoxlayanan.SelectedItem()
-        catatatn_dokter = RichTextBox2.Text
+        catatatn_dokter = catatandoktertb.Text
 
         If cbpusing.Checked() Then
 
@@ -218,7 +218,14 @@
 
         PictureBox1.Load(OpenFileDialog1.FileName)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        foto_pasien = PictureBox1.ImageLocation
 
+
+
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class

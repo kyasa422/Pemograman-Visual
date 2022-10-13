@@ -40,3 +40,25 @@ C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan
 C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.lbkeluhan.resources
 C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.exercise.resources
 C:\Users\user\source\repos\Vis_Tugas1_2107411013_Agus Setiawan\VBdasar_pertemuan2\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.pasien.resources
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\bin\Debug\net5.0-windows\VBdasar_pertemuan2.exe
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\bin\Debug\net5.0-windows\VBdasar_pertemuan2.deps.json
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\bin\Debug\net5.0-windows\VBdasar_pertemuan2.runtimeconfig.json
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\bin\Debug\net5.0-windows\VBdasar_pertemuan2.runtimeconfig.dev.json
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\bin\Debug\net5.0-windows\VBdasar_pertemuan2.dll
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\bin\Debug\net5.0-windows\VBdasar_pertemuan2.pdb
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.vbproj.AssemblyReference.cache
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.exercise.resources
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.Resources.resources
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.pasien.resources
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.lbkeluhan.resources
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.TambahKamar.resources
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.vbproj.GenerateResource.cache
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.AssemblyInfoInputs.cache
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.AssemblyInfo.vb
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.vbproj.CoreCompileInputs.cache
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.dll
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\refint\VBdasar_pertemuan2.dll
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.pdb
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\VBdasar_pertemuan2.genruntimeconfig.cache
+C:\Users\Kyasa\source\repos\Pemograman-Visual\VBdasar_pertemuan2\obj\Debug\net5.0-windows\ref\VBdasar_pertemuan2.dll

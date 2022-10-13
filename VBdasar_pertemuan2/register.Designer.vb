@@ -56,7 +56,7 @@ Partial Class lbkeluhan
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.catatandoktertb = New System.Windows.Forms.RichTextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
@@ -405,13 +405,13 @@ Partial Class lbkeluhan
         Me.Label11.TabIndex = 43
         Me.Label11.Text = "Keluhan"
         '
-        'RichTextBox2
+        'catatandoktertb
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(557, 144)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(266, 96)
-        Me.RichTextBox2.TabIndex = 44
-        Me.RichTextBox2.Text = ""
+        Me.catatandoktertb.Location = New System.Drawing.Point(557, 144)
+        Me.catatandoktertb.Name = "catatandoktertb"
+        Me.catatandoktertb.Size = New System.Drawing.Size(266, 96)
+        Me.catatandoktertb.TabIndex = 44
+        Me.catatandoktertb.Text = ""
         '
         'Label12
         '
@@ -440,7 +440,7 @@ Partial Class lbkeluhan
         Me.ClientSize = New System.Drawing.Size(1207, 591)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.RichTextBox2)
+        Me.Controls.Add(Me.catatandoktertb)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -513,7 +513,7 @@ Partial Class lbkeluhan
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents catatandoktertb As RichTextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Button3 As Button
 End Class
